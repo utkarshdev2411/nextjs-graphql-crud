@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Book {
+  _id: ID!
+  author: String!
+  publicationYear: Int!
+  title: String!
+}
+
+input CreateBookInput {
+  author: String!
+  publicationYear: Int!
+  title: String!
+}
+
+type Mutation {
+  createBook(createBookInput: CreateBookInput!): Book!
+}
+
+type Query {
+  books: [Book!]!
+}
