@@ -7,5 +7,5 @@ export class UpdateBookInput extends PartialType(CreateBookInput) {
   @Field(() => ID)
   @IsNotEmpty()
   @IsString()
-  id: string;
+  _id: string;
 }
